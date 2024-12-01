@@ -1,0 +1,61 @@
+Nombre: Mosainer Martín 
+Trabajo Práctico 7: AyDA
+=====================================
+
+Ejercicio: Solución
+
+====================
+
+Dado que el objetivo es obtener un patrón alternado, se tiene que realizar esto:
+
+Identificar los vasos mal ubicados: Observamos que los vasos en posiciones pares deben estar llenos y los vasos en posiciones impares deben estar vacíos.
+
+Intercambiar vasos: Empezamos de izquierda a derecha buscando un vaso lleno en una posición impar y un vaso vacío en una posición par. Cada vez que encontramos esta combinación, intercambiamos estos vasos.
+
+
+Gracias por compartir el enunciado del ejercicio. Ahora que veo la ilustración, puedo ver que el patrón inicial de los vasos muestra los primeros n vasos llenos y los últimos n vacíos. El objetivo es hacer que se alternen en un patrón vacío-lleno-vacío-lleno.
+
+Vamos a resolver el problema paso a paso teniendo en cuenta este patrón específico.
+
+Solución paso a paso:
+Dado que el objetivo es obtener un patrón alternado, podemos hacer lo siguiente:
+
+Identificar los vasos mal ubicados: Observamos que los vasos en posiciones pares deben estar llenos y los vasos en posiciones impares deben estar vacíos.
+
+Intercambiar vasos: Empezamos de izquierda a derecha buscando un vaso lleno en una posición impar y un vaso vacío en una posición par. Cada vez que encontramos esta combinación, intercambiamos estos vasos.
+
+Si n=4, tenemos inicialmente:
+
+🟤🟤🟤🟤⚪⚪⚪⚪
+Nuestro objetivo es llegar a:
+
+⚪🟤⚪🟤⚪🟤⚪🟤
+Para lograr esto, hacemos lo siguiente:
+
+Paso 1: Intercambiamos el vaso en posición 1 (lleno) con el vaso en posición 4 (vacío).
+
+Resultado:
+
+⚪🟤🟤🟤🟤⚪⚪⚪
+
+Paso 2: Intercambiamos el vaso en posición 3 (lleno) con el vaso en posición 6 (vacío).
+
+Resultado:
+
+⚪🟤⚪🟤🟤🟤⚪⚪
+
+Paso 3: Intercambiamos el vaso en posición 5 (lleno) con el vaso en posición 8 (vacío).
+
+Resultado final:
+
+⚪🟤⚪🟤⚪🟤⚪🟤
+
+
+Resultado
+Para esta configuración específica con n=4, el número mínimo de movimientos necesarios fue 3,
+como cada movimiento consistió en un solo intercambio entre un vaso lleno y un vaso vacío.
+
+Para un patrón inicial de 2n vasos con los primeros n llenos y los siguientes n vacíos, 
+el número mínimo de movimientos es siempre n, ya que solo necesitamos realizar n intercambios para alternar los vasos correctamente en el patrón vacío-lleno.
+
+Este enfoque garantiza que alcanzamos el patrón deseado en el número mínimo de movimientos.
